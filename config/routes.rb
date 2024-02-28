@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   
   root to: "messages#index"
+  resources :users, only: [:edit, :update]
 end
